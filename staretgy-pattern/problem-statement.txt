@@ -1,0 +1,18 @@
+Problem Statement: Online Payment System
+You are tasked with developing an online payment system for an e-commerce platform. The system needs to support multiple payment methods, including credit cards, PayPal, and cryptocurrency. Each payment method has its own unique processing algorithm and validation rules.
+Requirements:
+
+The system should allow users to select their preferred payment method at checkout.
+New payment methods should be easy to add in the future without modifying existing code.
+Each payment method should encapsulate its own processing logic and validation rules.
+The core checkout process should remain the same regardless of the chosen payment method.
+The system should be flexible enough to allow switching between payment methods at runtime.
+Implement the following payment methods initially:
+
+Credit Card: Validate card number, expiration date, and CVV.
+PayPal: Redirect to PayPal for authentication and process the payment.
+Cryptocurrency: Validate wallet address and process the transaction on the blockchain.
+
+
+
+Your task is to design and implement this payment system using the Strategy pattern to ensure flexibility, maintainability, and easy extensibility for future payment methods.
