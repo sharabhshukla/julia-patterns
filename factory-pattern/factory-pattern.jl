@@ -1,15 +1,15 @@
 abstract type FileParser end
 abstract type FileTypes end
 
-struct CSVParser <: FileType
+struct CSVParser <: FileTypes
     file::String
 end
 
-struct JSONParser <: FileType
+struct JSONParser <: FileTypes
     file::String
 end
 
-struct XMLParser <: FileType
+struct XMLParser <: FileTypes
     file::String
 end
 
@@ -33,4 +33,15 @@ end
 function parse_file(filetype::JSONFile)
     println("Parsing JSON file: ", filetype.file)
 end
+
+
+# Create a csv parser file object
+csv_file = CSVParser("data.csv")
+
+parse_file(csv_file)
+
+xml_file = XMLParser("data.xml")
+
+
+parse_file(xml_file)
 
