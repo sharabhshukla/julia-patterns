@@ -1,0 +1,7 @@
+You're developing a data processing library in Julia that needs to work with various file 
+formats (CSV, JSON, XML, etc.). Each file format requires a different parser and data extraction 
+method. As the library grows, you anticipate adding support for more file formats.
+
+Design a system using the factory pattern that allows users to create the appropriate parser object 
+based on the file type they're working with, without needing to know the specifics of each parser's 
+implementation. The system should be easily extensible to accommodate new file formats in the future.
